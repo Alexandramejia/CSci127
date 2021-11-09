@@ -1,7 +1,7 @@
-#CSci 127 Teaching Staff
-#October 2017
+#alexandra.mejia88@myhunter.cuny.edu
+#11/8/21
 #A program that summarizes images, like koalastothemax
-#Modified by:  ADD YOUR NAME HERE
+#Modified by:Alexandra Erika Mejia 
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,15 +13,11 @@ def average(region):
      """
 
      red, green, blue = 0,0,0  #<-- placeholder, can remove once defined.
-
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other than your name above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
-
-
+     
+     r = np.average(region[:,:,0])
+     g = np.average(regoin[:,:,1])
+     b = np.average(regoin[:,:,2})
+     
      return(red,green,blue)
 
 def setRegion(region, r,g,b):
@@ -31,15 +27,11 @@ def setRegion(region, r,g,b):
      red values of r, green values of g, and blue values of b.
      """
 
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other than your name above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
-
-
-
+     region[:,:,0] = r
+     region[:,:,1] = g
+     region[:,:,2] = b
+                           
+     return(r,g,b)
 
 
 ######################################################################
